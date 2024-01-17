@@ -1,0 +1,25 @@
+
+
+.layout-unique-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #121212;
+  }
+  
+  .layout-unique-main {
+    flex-grow: 1;
+    padding: 1rem;
+    background: #1e1e1e; 
+    color: #ffffff; 
+    overflow-y: auto; 
+  }
+  
+
+  .layout-unique-footer {
+    background: #121212;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+  

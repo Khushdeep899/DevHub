@@ -1,0 +1,112 @@
+.chat-page-container {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    background: url('../../public/channel-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.overlay-chat-page {
+    flex-grow: 1; 
+    background: rgba(0, 0, 0, 0.4); 
+    padding: 50px;
+
+    box-sizing: border-box;
+  }
+  
+
+.text-content-container {
+    flex-grow: 1;
+    width: 100%;
+   
+    
+    color: #fff; 
+}
+
+.title-chat-page  {
+    font-size: 1.5rem; 
+    color: rgba(200, 200, 200, 1);
+
+    margin-bottom: 1rem;
+}
+
+.search-and-results {
+    margin-bottom: 2rem;
+}
+
+.return-button {
+    margin-top: 1rem;
+   
+}
+
+
+.channel-list {
+    flex: 0 0 250px; 
+    background: #000; 
+    color: #fff;
+    overflow-y: auto; 
+    padding: 1rem;
+}
+.channel-list-container {
+    width: 250px; 
+    background-color: #030013; 
+    color: #fff;
+    overflow-y: auto; 
+    height: 100vh; 
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+.channel-item {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #fff; 
+    text-decoration: none;
+    border-left: 4px solid transparent; 
+}
+
+.channel-item:hover,
+.channel-item:focus {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.channel-item.active {
+    border-left-color:  rgba(255, 255, 255, 0.2); 
+}
+
+.messages-container {
+    flex-grow: 1; 
+    padding: 2rem;
+    overflow-y: auto; 
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+
+.search-and-results-unique {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(29, 29, 29, 0.4);
+    border-bottom: 1px solid #333; 
+  }
+  
+  
+  .search-bar-unique-container {
+    max-width: 600px; 
+    margin: 0 auto;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center; 
+    align-items: center; 
+  }
+
+
+

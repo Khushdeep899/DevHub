@@ -1,0 +1,57 @@
+.LandingPage-container {
+    position: relative;
+    min-height: 100vh;
+    background: url('../../public/LandingPage-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.overlay-LandingPage {
+  flex: 1;
+}
+  
+.overlay-LandingPage{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    padding: 50px 0; 
+    background: rgba(0, 0, 0, 0.7); 
+}
+  
+
+
+.action-buttons a {
+    margin: 0 10px;
+    animation-duration: 2s;
+}
+
+@media (max-width: 768px) {
+    .text-content {
+        margin-bottom: 20px;
+    }
+}
+
+.features-section h2,
+.features-section h3,
+.features-section p {
+  color: white;
+}
+
+
+.testimonial-section h2,
+.testimonial-section p,
+.testimonial-section blockquote,
+.testimonial-section .testimonial-author {
+  color: white;
+}
+
+
+.cta-section h2,
+.cta-section p {
+  color: white;
+}
+

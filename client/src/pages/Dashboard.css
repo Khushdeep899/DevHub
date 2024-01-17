@@ -1,0 +1,54 @@
+.Dashboard-container {
+    position: relative;
+    min-height: 100vh;
+    background: url('../../public/channel-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+.Dashboard-container {
+    
+    display: flex;
+    height: calc(100vh - var(--header-footer-height)); 
+  }
+
+  .Link{
+    color: red
+  }
+  
+  .channels-container {
+    
+    flex: 0 0 300px; 
+    background-color: #030013; 
+    color: #ffffff; 
+    overflow-y: auto; 
+    padding: 1rem;
+  }
+  
+  .NewChannel-container {
+
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 1rem;
+    border-radius: 10px; 
+  }
+  
+  
+  .text-content-container {
+    
+    position: relative;
+    z-index: 2;
+    max-width: 800px; 
+    margin: auto;
+    text-align: center;
+    color: #fff; 
+  }
+  
+  .title {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  

@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  db:
+    image: mariadb
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: DevHubdb
+    volumes:
+      - db-data:/var/lib/mysql
+
+  db-init:
+    image: node:latest
+    restart: 'no'
+    depends_on:
+      - db
+    volumes:
+      - ./Server:/app
+      - /app/node_modules
+    command: sh -c "npm install && node serverdb.js"
+    working_dir: /app
+
+  backend:
+    image: node:latest
+    restart: unless-stopped
+    depends_on:
+      - db-init
+    environment:
+      DB_HOST: db
+      DB_USER: root
+      DB_PASS: password
+      DB_NAME: DevHubdb
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./Server:/app
+      - /app/node_modules
+    command: sh -c "npm install && node App.js"
+    working_dir: /app
+
+  frontend:
+    image: node:14
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+    command: sh -c "npm install && npm start"
+    working_dir: /app
+
+volumes:
+  db-data:
+  # Define named volumes for node_modules
+  backend-node-modules:
+  frontend-node-modules:

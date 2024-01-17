@@ -1,0 +1,36 @@
+.response-list-container {
+  margin-top: 1rem;
+  background-color: #202020; 
+  border-radius: 4px;
+  padding: 1rem;
+  max-height: 300px; 
+  overflow-y: auto; 
+}
+
+.response-list-container > :first-child {
+  border-top: none; 
+}
+
+.response-list-container > :last-child {
+  margin-bottom: 0; 
+}
+
+
+.new-response-card {
+  background-color: #333; 
+  color: #ddd; 
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
+
+
+.new-response-card-action {
+  color: #bbb;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.new-response-card-action:hover {
+  color: #fff;
+}

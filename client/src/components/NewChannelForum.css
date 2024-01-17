@@ -1,0 +1,80 @@
+.create-channel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - var(--navbar-height)); 
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .overlay-create-channel {
+    background: rgba(28, 28, 30, 0.5); 
+    padding: 2rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+  }
+  
+  .form-container-create-channel {
+    text-align: left;
+  }
+  
+  .title-create-channel {
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group-create-channel {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-label-create-channel {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #ddd;
+  }
+  
+  .form-control-create-channel {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: #ddd;
+  }
+  
+  .form-control-create-channel::placeholder {
+    color: #666;
+  }
+  
+  .form-control-create-channel:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #333;
+  }
+  
+  .btn-primary-create-channel {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    padding: 0.65rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .btn-primary-create-channel:hover,
+  .btn-primary-create-channel:focus {
+    background-color: #0062cc;
+    border-color: #005cbf;
+  }
+
+
+  
+  

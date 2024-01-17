@@ -1,0 +1,119 @@
+/* Channels Container */
+.channel-list-container {
+  background: #020025; 
+  padding: 20px;
+  width: 250px;
+  height: 100vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+
+.channel-heading {
+  color: #f0f0f0;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+.channel-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.channel-item {
+  background-color: #1d1d1f;
+  margin-bottom: 10px;
+  padding: 0.5rem;
+  border: 1px solid #444;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.channel-item:hover {
+  background-color: #2a2a2c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+
+.channel-name {
+  font-weight: bold;
+  text-decoration: none;
+  color: #f0f0f0;
+  margin-bottom: 0.5rem;
+}
+
+.channel-name:hover,
+.channel-name:focus {
+  color: #ffffff;
+}
+
+
+.channel-item.active {
+  background-color: #b82525;
+  border-left: 4px solid #ff4848;
+}
+
+
+.channel-info {
+  width: 100%;
+}
+
+
+.channel-description {
+  color: #b0b0b0;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.creator-info {
+  color: #ccc;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+
+.channel-delete-button {
+  background-color: #ff6c6c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: center;
+  margin-top: 0.5rem;
+}
+
+.channel-delete-button:hover {
+  background-color: #ff4949;
+}
+
+@media (max-width: 768px) {
+  .channel-list-container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+  }
+
+  .channel-item {
+    border-radius: 0;
+    padding-left: 1rem;
+  }
+}
+
+
+.channel-search-input:focus {
+  outline: none;
+  border-color: #007aff;
+}

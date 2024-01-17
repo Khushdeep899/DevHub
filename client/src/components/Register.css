@@ -1,0 +1,89 @@
+
+  .registration-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('../../public/LandingPage-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.registration-overlay {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark overlay */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px; /* Maximum width of the form */
+}
+
+.registration-content {
+    text-align: center;
+}
+
+.registration-title {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.registration-form {
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.login-redirect {
+    margin-top: 1rem;
+}
+
+.redirect-link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.redirect-link:hover {
+    color: #add8e6;
+}
+
+.error-message {
+    color: #ff3860;
+    background-color: #ffe5e5;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: 1px solid #ff3860;
+    border-radius: 5px;
+    text-align: center;
+}

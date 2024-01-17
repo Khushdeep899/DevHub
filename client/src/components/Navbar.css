@@ -1,0 +1,80 @@
+.navbar {
+  background-color: #030013;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-items {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar-link:hover,
+.navbar-link:focus {
+  background-color: #1a1a2e;
+  color: #e0e1dd;
+}
+
+.profile-dropdown-container {
+  position: relative;
+}
+
+.profile-menu-trigger {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.profile-menu-trigger:hover,
+.profile-menu-trigger:focus {
+background-color: #1a1a2e;
+}
+
+.profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.25rem);
+  background-color: #1a1a2e;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  min-width: 150px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.profile-dropdown-item {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.profile-dropdown-item:hover,
+.profile-dropdown-item:focus {
+  background-color: #303050;
+}
+
+/* Add additional styles as needed */
