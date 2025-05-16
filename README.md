@@ -1,6 +1,6 @@
 # DevHub
 
-Channel Based post and reply web app.
+Channel Based post and reply web app
 
 # Demo 
 
